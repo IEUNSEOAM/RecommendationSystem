@@ -26,10 +26,6 @@ def read_items(path):
 
 
 def split_validation_from_base(base_rows, valid_ratio=0.1, seed=42):
-    """
-    Split validation data only from ua.base.
-    ua.test is not used during training or tuning.
-    """
     rng = random.Random(seed)
     by_user = defaultdict(list)
 
